@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar Mi Nombre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        p#savedNameDisplay {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        p#message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola! ¿Cómo te llamas?</h1>
+
+        <input type="text" id="nameInput" placeholder="Escribe tu nombre aquí...">
+        <button id="saveButton">Guardar Nombre</button>
+
+        <p id="message"></p>
+        <p id="savedNameDisplay"></p>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #7dd321;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #64b51d;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .contraseñaRecu{
+            display: flex;
+            font-size: 13px;
+        }
+
+        a {
+            color: #7dd321;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        img{
+            width: 140px;
+            margin: 0;
+        }
+
+        .mensaje {
+        padding: 12px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        display: none;
+        }
+
+        .mensaje.error {
+        color: #d8000c;
+        font-size: 13px;
+        }
+
+        .mensaje.exito {
+        color: #7dd321;
+        font-size: 14px;
+        }
