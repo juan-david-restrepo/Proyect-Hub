@@ -5,19 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/registro.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <title>register</title>
 </head>
 
 <body>
 
     <div class="registro-container">
-        <img src="/Images/logo.png.png" alt="Logo Project HUB">
+        <img src="../Images/logo.png.png" alt="Logo Project HUB">
         <h2>Regístrate</h2>
         <form>
-            <input id="correoInput" type="text" placeholder="Correo electronico" required>
-            <input id="contraseñaInput" type="password" placeholder="Contraseña" required>
-            <input id="nombreInput" type="text" placeholder="Nombre de usuario" required>
-            <input id="documentoInput" type="text" placeholder="Documento" required>
+            <div class="agrupar-input correoContainer">
+                <i class='bx bx-envelope'></i>
+                <input id="correoInput" type="text" placeholder="Correo electronico" required />
+            </div>
+            <div class="agrupar-input contraseñaContainer">
+                <i class='bx bx-lock-alt'></i>
+                <input id="contraseñaInput" type="password" placeholder="Contraseña" required>
+                <i class='bx bx-show' id="mostrarContraseña"></i>
+            </div>
+            <div class="agrupar-input nombreContainer">
+                <i class='bx bx-user'></i>
+                <input id="nombreInput" type="text" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="agrupar-input documentoContainer">
+                <i class='bx bx-id-card'></i>
+                <input id="documentoInput" type="text" placeholder="Documento" required pattern="\d+" inputmode="numeric" required>
+            </div>
+
             <div class="opcionRol">
                 <label for="rol">Tipo de usuario</label>
                 <select id="rol" name="rol" required>

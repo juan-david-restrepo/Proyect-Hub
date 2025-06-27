@@ -2,6 +2,16 @@ const documentoInput = document.getElementById('documentoInput')
 const contraseñaInput = document.getElementById('contraseñaInput')
 const botonConfirmar = document.getElementById('botonSesion')
 const mensaje = document.getElementById('mensaje');
+const mostrarContraseña = document.getElementById('mostrarContraseña');
+
+mostrarContraseña.addEventListener('click', () => {
+    const type = contraseñaInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    contraseñaInput.setAttribute('type', type);
+
+    
+    mostrarContraseña.classList.toggle('bx-show'); // Cambiar ícono visualmente
+    mostrarContraseña.classList.toggle('bx-hide');
+});
 
 
 function mostrarMensaje(msg, isError = false) {
@@ -15,6 +25,7 @@ function mostrarMensaje(msg, isError = false) {
 }
 
 function Loguearme() {
+    
     const documento = documentoInput.value.trim(); // Obtener el valor del input y quitar espacios extra
     const contraseña = contraseñaInput.value.trim(); // Obtener el valor del input y quitar espacios extra
 
@@ -36,5 +47,8 @@ function Loguearme() {
 
 }
 
-botonSesion.addEventListener('click', Loguearme);
+botonRegistro.addEventListener('click', function(e) {
+    e.preventDefault();
+    Loguearme();
+});
 

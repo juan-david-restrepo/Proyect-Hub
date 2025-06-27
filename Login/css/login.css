@@ -54,6 +54,7 @@
             background-color: #64b51d;
         }
 
+
         .register-link {
             margin-top: 15px;
             font-size: 14px;
@@ -102,4 +103,36 @@
         .mensaje.exito {
         color: #7dd321;
         font-size: 14px;
+        }
+
+        .agrupar-input {
+            position: relative;
+        }
+
+        .agrupar-input i:first-child {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #7dd321;
+            font-size: 18px;
+        }
+
+        .agrupar-input input {
+            width: 100%;
+            padding: 14px 48px 14px 36px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 15px;
+        }
+
+        
+        .contraseñaContainer #mostrarContraseña {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #888;
+            font-size: 18px;
         }

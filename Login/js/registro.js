@@ -5,6 +5,16 @@ const documentoInput = document.getElementById('documentoInput');
 const rol = document.getElementById('rol');
 const mensaje = document.getElementById('mensaje');
 const botonRegistro = document.getElementById('botonRegistro');
+const mostrarContraseña = document.getElementById('mostrarContraseña');
+
+mostrarContraseña.addEventListener('click', () => {
+    const type = contraseñaInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    contraseñaInput.setAttribute('type', type);
+
+    // Cambiar ícono visualmente
+    mostrarContraseña.classList.toggle('bx-show');
+    mostrarContraseña.classList.toggle('bx-hide');
+});
 
 // Función para mostrar mensajes en pantalla
 function mostrarMensaje(msg, isError = false) {
@@ -27,6 +37,10 @@ function guardarUsuario() {
     if (!correo || !contraseña || !nombre || !documento || !rolSeleccionado) {
         return mostrarMensaje("hay algun campo sin llenar", true);
         
+    }
+
+    if (!/\S+@\S+\.\S+/.test(correo)) {
+        return mostrarMensaje("Correo inválido.", true);
     }
 
     const nuevoUsuario = {

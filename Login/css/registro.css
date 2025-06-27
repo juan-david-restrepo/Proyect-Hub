@@ -23,18 +23,42 @@
             text-align: center;
         }
 
+        .agrupar-input {
+            position: relative;
+        }
+
+        .agrupar-input i:first-child {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #7dd321;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+        .agrupar-input input {
+            width: 100%;
+            padding: 14px 48px 14px 40px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-size: 15px;
+            margin: 10px 0;
+        }
+
+        .contraseñaContainer #mostrarContraseña {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #888;
+            font-size: 18px;
+        }
+
         h2 {
             color: #222;
             margin-bottom: 20px;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 12px 15px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
         }
 
         button {
