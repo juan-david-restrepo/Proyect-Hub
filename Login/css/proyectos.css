@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0fff4, #d0f8e4);
+  color: #1b1b1b;
+}
+
+nav {
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+  background-color: #b7fccb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.imagenLogo {
+  width: 160px;
+  height: auto;
+}
+
+.contBotones {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  width: 110px;
+  height: 40px;
+  border-radius: 9px;
+  background-color: #88eb1e;
+  color: rgb(255, 255, 255);
+  border: #7dd321;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #64b51d;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #68d30a;
+  margin-bottom: 15px;
+}
+
+header p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+main {
+  padding: 40px 80px;
+  margin: 0 0 40px 0;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  justify-items: center;
+  margin: 0 0 119px 0;
+}
+
+.contInformacionPrincipal {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+.contInformacionPrincipal p{
+  text-align: center;
+}
+
+.imagenLogoReporteloYa {
+  width: 120px;
+}
+
+.imagenLogoinfo{
+  width: 130px;
+  margin: 0 0 10px 0;
+}
+
+.imagenLogoEduTransit{
+  width: 130px;
+}
+
+.imagenLogotechspeakB{
+  width: 80px;
+  height: 90px;
+  margin: 0 0 19px 0;
+}
+
+.paginacion{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer{
+  display: flex;
+  background-color: #b2f5c5;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  
+}

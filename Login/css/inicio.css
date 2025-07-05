@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0fff4, #d0f8e4);
+  color: #1b1b1b;
+}
+
+nav {
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+  background-color: #b7fccb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+.imagenLogo {
+  width: 160px;
+  height: auto;
+}
+
+.contBotones {
+  display: flex;
+  gap: 15px;
+}
+
+
+button {
+  width: 110px;
+  height: 40px;
+  border-radius: 9px;
+  background-color: #88eb1e;
+  color: rgb(255, 255, 255);
+  border: #7dd321;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #64b51d;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #68d30a;
+  margin-bottom: 15px;
+}
+
+header p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+.primeraSeccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.contInformacion {
+  background-color: white;
+  width: 440px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.contInformacion h3 {
+  margin-bottom: 15px;
+  color: #7dd321;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tarjeta {
+  background-color: #ecfdf5;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta i {
+  font-size: 24px;
+  color: #7dd321;
+  margin-bottom: 8px;
+}
+
+.textoInformacion {
+  text-align: center;
+}
+
+.login-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.h2Login {
+  color: #7dd321;
+  
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.botonLogin {
+  background-color: #7dd321;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #64b51d;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.contraseñaRecu {
+  display: flex;
+  font-size: 13px;
+}
+
+a {
+  color: #7dd321;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.mensaje {
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  display: none;
+}
+
+.mensaje.error {
+  color: #d8000c;
+  font-size: 13px;
+}
+
+.mensaje.exito {
+  color: #7dd321;
+  font-size: 14px;
+}
+
+.agrupar-input {
+  position: relative;
+}
+
+.agrupar-input i:first-child {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7dd321;
+  font-size: 18px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agrupar-input input {
+  width: 100%;
+  padding: 14px 48px 14px 36px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.contraseñaContainer #mostrarContraseña {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+
+.segundaSeccion {
+  background-color: #b9f7ca;
+  display: flex;
+  border-radius: 20px;
+  margin: 20px 0 35px 0;
+  max-width: 1000px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contGraficas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagenGrafica {
+  width: 300px;
+}
+.parrafoGrafica {
+  width: 60%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  align-items: center;
+  background-color: #b2f5c5;
+  height: 70px;
+}
+
+footer p{
+  font-size: 18px;
+}
