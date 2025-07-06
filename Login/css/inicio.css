@@ -29,7 +29,6 @@ nav {
   gap: 15px;
 }
 
-
 button {
   width: 110px;
   height: 40px;
@@ -80,6 +79,7 @@ header p {
 .contInformacion {
   background-color: white;
   width: 440px;
+  max-height: 400px;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -134,7 +134,7 @@ header p {
 
 .h2Login {
   color: #7dd321;
-  
+
   margin-bottom: 20px;
 }
 
@@ -174,6 +174,7 @@ button:hover {
   font-size: 13px;
 }
 
+
 a {
   color: #7dd321;
   text-decoration: none;
@@ -190,7 +191,9 @@ a:hover {
   margin-top: 20px;
 }
 
-.mensaje {
+#mensajeLogin,
+#mensajeRegistro,
+#mensajeRecuperar {
   padding: 12px;
   font-weight: bold;
   text-align: center;
@@ -199,12 +202,16 @@ a:hover {
   display: none;
 }
 
-.mensaje.error {
+#mensajeLogin.error,
+#mensajeRegistro.error,
+#mensajeRecuperar.error {
   color: #d8000c;
   font-size: 13px;
 }
 
-.mensaje.exito {
+#mensajeLogin.exito,
+#mensajeRegistro.exito,
+#mensajeRecuperar.exito {
   color: #7dd321;
   font-size: 14px;
 }
@@ -222,7 +229,7 @@ a:hover {
   font-size: 18px;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,7 +243,7 @@ main{
   font-size: 15px;
 }
 
-.contraseñaContainer #mostrarContraseña {
+.contraseñaContainer #mostrarContraseñaLogin {
   position: absolute;
   right: 12px;
   top: 50%;
@@ -245,6 +252,145 @@ main{
   color: #888;
   font-size: 18px;
 }
+
+/* ------------------------ REGISTRO ------------------------ */
+.registro-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.h2Registro {
+  color: #7dd321;
+  margin-bottom: 20px;
+}
+
+.formRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formRegistro select {
+  width: 100%;
+  padding: 14px 48px 14px 36px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.opcionRol {
+  width: 100%;
+  text-align: left;
+}
+
+.opcionRol label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#rol {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.formRegistro .agrupar-input {
+  position: relative;
+  width: 100%;
+}
+
+#botonRegistro {
+  padding: 12px 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.iniciarSesion-link {
+  margin-top: 10px;
+}
+
+/* ------------------------ RECUPERAR CONTRASEÑA ------------------------ */
+.recuperar-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.h2Contraseña {
+  color: #7dd321;
+  margin-bottom: 20px;
+}
+
+.formContraseña {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.formContraseña input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+#mostrarContraseñaRegistro {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+
+#mostrarContraseñaRecuperar{
+  display: none;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container i {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+.buscarUsuario {
+  width: 100%;
+}
+.confirmar {
+  display: none;
+  width: 100%;
+}
+
+.nuevaContraseña {
+  display: none;
+}
+
+
+/*-------------------------------------------------------*/
 
 .segundaSeccion {
   background-color: #b9f7ca;
@@ -281,6 +427,6 @@ footer {
   height: 70px;
 }
 
-footer p{
+footer p {
   font-size: 18px;
 }

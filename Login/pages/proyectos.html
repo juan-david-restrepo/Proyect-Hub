@@ -1,97 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="../css/proyectos.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-      rel="stylesheet"/>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"/>
-  </head>
 
-  <body>
-    <nav>
-      <a href="../pages/inicio.html"
-        ><img class="imagenLogo" src="../Images/logo.png" alt="imagen del logo"/></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos</title>
+  <link rel="stylesheet" href="../css/proyectos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-      <div class="contBotones">
-        <a href="../pages/inicio.html"><button>Inicio</button></a>
-        <button>Ayuda</button>
-        <button>Información</button>
-      </div>
-    </nav>
-    <header>
-        <h1>Proyectos a producción</h1>
-        <p>Aquí encontrarás proyectos que estan disponibles para salir a producción.</p>
-    </header>
+<body>
+  <nav>
+    <a href="../pages/inicio.html"><img class="imagenLogo" src="../Images/logo.png" alt="imagen del logo" /></a>
 
-    <main>
-      <div class="grid-proyectos">
-        <div
-          class="contInformacionPrincipal"
-          onclick="expandirProyecto('Sistema de inventario para empresa agrícola.', 'Dashboard y reportes PDF', 'Autenticación segura', 'Contacto: juan.perez@sena.edu.co')"
-        >
-            <img
-              class="imagenLogotechspeakB"
-              src="../Images/logo_techspeakB.webp"
-              alt="logo proyectos"
-            />
-            <p>Sistema para aprender a hablar ingles de forma interactiva.</p>
-            <button class="ver-mas">Ver más</button>
-        </div>
+    <div class="contBotones">
+      <a href="../pages/inicio.html"><button>Inicio</button></a>
+      <button>Ayuda</button>
+      <a href="../pages/informacion.html"><button>Información</button></a>
+    </div>
+  </nav>
+  <header>
+    <h1>Proyectos a producción</h1>
+    <p>Aquí encontrarás proyectos que estan disponibles para salir a producción.</p>
+  </header>
 
-        <div
-          class="contInformacionPrincipal"
-          onclick="expandirProyecto(' Aplicación móvil de rutas turísticas.', 'Geolocalización', 'Recomendaciones inteligentes', 'Contacto: maria.gomez@sena.edu.co')"
-        >
-            <img
-              class="imagenLogoEduTransit"
-              src ="../Images/logoEduTransit.png"
-              alt="logo proyectos"
-            />
-            <p>Aplicación móvil de rutas estudiantiles para más seguridad.</p>
-          <button class="ver-mas">Ver más</button>
-        </div>
-
-        <div
-          class="contInformacionPrincipal"
-          onclick="expandirProyecto('Plataforma e-learning para técnicos.', 'Contenido en video', 'Certificados al finalizar', 'Contacto: carlos.lopez@sena.edu.co')"
-        >
-            <img
-              class="imagenLogoReporteloYa"
-              src="../Images/logoReporteloYa.png"
-              alt="logo proyectos"
-            />
-            <p>Plataforma de reportes de transito para mantener la seguridad.</p>
-          <button class="ver-mas">Ver más</button>
-        </div>
-
-        <div
-          class="contInformacionPrincipal"
-          onclick="expandirProyecto('Web de gestión ambiental para empresas.', 'Indicadores de sostenibilidad', 'Sugerencias automáticas', 'Contacto: laura.ramirez@sena.edu.co')"
-        >
-            <img
-              class="imagenLogoinfo"
-              src="../Images/logo.png"
-              alt="logo proyectos"
-            />
-            <p>Web de gestión de proyectos formativos para manejar los proyectos SENA.</p>
-          <button class="ver-mas">Ver más</button>
-        </div>
+  <main>
+    <div class="grid-proyectos">
+      <div class="contInformacionPrincipal" onclick="expandirProyecto(
+    this,
+    'Sistema para aprender inglés de forma interactiva',
+    ['Gamificación', 'Reconocimiento de voz', 'Multiplataforma'],
+    'Esta aplicación está diseñada para facilitar el aprendizaje del idioma inglés de manera didáctica, dinámica y personalizada. A través de una interfaz amigable y recursos modernos, permite a los usuarios desarrollar habilidades en vocabulario, gramática, comprensión auditiva y expresión oral desde cualquier dispositivo móvil o computadora. La plataforma incluye actividades como juegos interactivos, retos diarios, ejercicios con inteligencia artificial, simulaciones de conversación y retroalimentación automática. También ofrece lecciones clasificadas por niveles (A1, A2, B1, etc.), seguimiento de progreso, y la posibilidad de practicar con hablantes nativos mediante videollamadas o chats integrados. Gracias a su enfoque gamificado, los usuarios se sienten motivados a aprender mientras avanzan a través de misiones, obtienen recompensas y desbloquean nuevos contenidos.'
+        )">
+        <img class="imagenLogotechspeakB" src="../Images/logo_techspeakB.webp" alt="logo proyectos" />
+        <p>Sistema para aprender a hablar inglés de forma interactiva.</p>
+        <button class="ver-mas">Ver más</button>
       </div>
 
-      <div class="paginacion">
-        <button disabled>Página 1 de 2</button>
-        <button>Siguiente</button>
+      <div class="contInformacionPrincipal" onclick="expandirProyecto(
+    this,
+    'Aplicación móvil de rutas estudiantiles para más seguridad',
+    ['Geolocalización', 'Seguridad escolar', 'Notificaciones inteligentes'],
+      'Esta aplicación móvil fue diseñada con el objetivo de mejorar la seguridad y la planificación del transporte escolar de los estudiantes. A través de un sistema de geolocalización en tiempo real, tanto los padres de familia como las instituciones educativas pueden monitorear la ubicación exacta de los vehículos escolares, el tiempo estimado de llegada y las paradas establecidas'
+        )">
+        <img class="imagenLogoEduTransit" src="../Images/logoEduTransit.png" alt="logo proyectos" />
+        <p>Aplicación móvil de rutas estudiantiles para más seguridad.</p>
+        <button class="ver-mas" id="botonVerMas">Ver más</button>
       </div>
-    </main>
 
-    <footer>
-      <p>© 2025 ProyectoHub - SENA</p>
-    </footer>
-  </body>
+      <div class="contInformacionPrincipal" onclick="expandirProyecto(
+    this,
+    'Plataforma de reportes de tránsito para mantener la seguridad',
+    ['Reportes ciudadanos', 'Movilidad segura', 'Alertas viales'],
+    'Esta plataforma web ha sido desarrollada para facilitar la administración, seguimiento y evaluación de los proyectos formativos realizados por aprendices e instructores en el SENA. Su principal objetivo es centralizar la información de cada proyecto en un solo lugar, permitiendo una mejor organización del proceso formativo y una mayor visibilidad de los avancesLa herramienta permite registrar proyectos por ficha, programa de formación o instructor. Dentro de cada proyecto se pueden subir evidencias, asignar responsabilidades, establecer cronogramas, y generar informes automáticos de seguimiento. También incluye módulos para la revisión por parte de coordinadores, quienes pueden aprobar, rechazar u observar proyectos con comentarios específicos'
+        )">
+        <img class="imagenLogoReporteloYa" src="../Images/logoReporteloYa.png" alt="logo proyectos" />
+        <p>Plataforma de reportes de transito para mantener la seguridad.</p>
+        <button class="ver-mas" id="botonVerMas">Ver más</button>
+      </div>
+
+      <div class="contInformacionPrincipal" onclick="expandirProyecto(
+    this,
+    'Web de gestión de proyectos formativos para manejar los proyectos SENA',
+    ['Proyectos formativos', 'Seguimiento académico', 'Gestión institucional'],
+    'Esta plataforma digital fue creada para facilitar el reporte ciudadano de incidentes y situaciones que afectan la movilidad y seguridad vial en zonas urbanas y rurales. A través de una interfaz intuitiva y accesible, cualquier usuario puede registrar accidentes, vehículos mal estacionados, semáforos dañados, zonas de alto riesgo y otras problemáticas relacionadas con el tránsito.'
+        )">
+        <img class="imagenLogoinfo" src="../Images/logo.png" alt="logo proyectos" />
+        <p>Web de gestión de proyectos formativos para manejar los proyectos SENA.</p>
+        <button class="ver-mas" id="botonVerMas">Ver más</button>
+      </div>
+    </div>
+
+    <div class="paginacion">
+      <button disabled>Página 1 de 1</button>
+      <button>Siguiente</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ProyectoHub - SENA</p>
+  </footer>
+  <script src="../js/proyectos.js"></script>
+</body>
+
 </html>

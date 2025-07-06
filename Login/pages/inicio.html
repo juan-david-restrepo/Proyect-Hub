@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <nav>
-      <img class="imagenLogo" src="../Images/logo.png" alt="imagen del logo" />
-      <div class="contBotones">
-        <a href="../pages/proyectos.html"><button>Proyectos</button></a>
-        <button>Ayuda</button>
-        <button>Informacion</button>
-      </div>
-    </nav>
+  <nav>
+    <img class="imagenLogo" src="../Images/logo.png" alt="imagen del logo" />
+    <div class="contBotones">
+      <a href="../pages/proyectos.html"><button>Proyectos</button></a>
+      <button>Ayuda</button>
+      <a href="../pages/informacion.html"><button>Informacion</button></a>
+    </div>
+  </nav>
 
   <header>
     <h1>ProyectoHub</h1>
@@ -26,62 +26,111 @@
   </header>
   <main>
     <section class="primeraSeccion">
+
+      <!-- Información -->
       <div class="contInformacion">
         <h3>¿Qué es ProyectoHub?</h3>
-        <p>
-          Es una plataforma para que los aprendices del SENA puedan registrar,
-          colaborar y hacer seguimiento a sus proyectos.
-        </p>
-
+        <p>Es una plataforma para que los aprendices del SENA puedan registrar, colaborar y hacer seguimiento a sus
+          proyectos.</p>
         <div class="beneficios">
-          <div class="tarjeta">
-            <i class="bx bx-upload"></i>
+          <div class="tarjeta"><i class="bx bx-upload"></i>
             <p>Sube tus avances</p>
           </div>
-          <div class="tarjeta">
-            <i class="bx bx-group"></i>
+          <div class="tarjeta"><i class="bx bx-group"></i>
             <p>Colabora con tu equipo</p>
           </div>
-          <div class="tarjeta">
-            <i class="bx bx-check-shield"></i>
+          <div class="tarjeta"><i class="bx bx-check-shield"></i>
             <p>Recibe feedback</p>
           </div>
         </div>
       </div>
 
-      <div class="login-container">
+      <!-- Login -->
+      <div id="vista-login" class="login-container vista">
         <h2 class="h2Login">Iniciar sesión</h2>
         <form>
           <div class="agrupar-input documentoContainer">
             <i class="bx bx-id-card"></i>
-            <input id="documentoInput" type="text" placeholder="Documento" inputmode="numeric" required />
+            <input id="documentoInputLogin" type="text" placeholder="Documento" required />
           </div>
-
           <div class="agrupar-input contraseñaContainer">
             <i class="bx bx-lock-alt"></i>
             <input id="contraseñaInput" type="password" placeholder="Contraseña" required />
-            <i class="bx bx-show" id="mostrarContraseña"></i>
+            <i class="bx bx-show" id="mostrarContraseñaLogin"></i>
           </div>
-          <a class="contraseñaRecu" href="../pages/contraseña.html">¿Olvidaste la contraseña?</a>
-          <p class="mensaje" id="mensaje"></p>
-          <button class="botonLogin" id="botonSesion" type="submit">
-            Entrar
-          </button>
+          <a href="#" id="link-recuperar" class="contraseñaRecu">¿Olvidaste la contraseña?</a>
+          <p class="mensaje" id="mensajeLogin"></p>
+          <button class="botonLogin" id="botonSesion" type="submit">Entrar</button>
         </form>
         <div class="register-link">
-          ¿No tienes cuenta?
-          <a href="../pages/registro.html">Regístrate aquí</a>
+          ¿No tienes cuenta? <a href="#" id="link-registrar">Regístrate aquí</a>
         </div>
       </div>
+
+      <!-- Registro -->
+      <div id="vista-registro" class="registro-container vista" style="display: none;">
+        <h2 class="h2Registro">Regístrate</h2>
+        <form class="formRegistro">
+          <div class="agrupar-input correoContainer">
+            <i class='bx bx-envelope'></i>
+            <input id="correoInput" type="text" placeholder="Correo electrónico" required />
+          </div>
+          <div class="agrupar-input contraseñaContainer">
+            <i class='bx bx-lock-alt'></i>
+            <input id="contraseñaInputRegistro" type="password" placeholder="Contraseña" required />
+            <i class='bx bx-show' id="mostrarContraseñaRegistro"></i>
+          </div>
+          <div class="agrupar-input nombreContainer">
+            <i class='bx bx-user'></i>
+            <input id="nombreInput" type="text" placeholder="Nombre de usuario" required>
+          </div>
+          <div class="agrupar-input documentoContainer">
+            <i class='bx bx-id-card'></i>
+            <input id="documentoInputRegistro" type="text" placeholder="Documento" required pattern="\d+"
+              inputmode="numeric">
+          </div>
+          <div class="opcionRol">
+            <label for="rol">Tipo de usuario</label>
+            <select id="rol" name="rol" required>
+              <option value="aprendiz">Aprendiz</option>
+              <option value="instructor">Instructor</option>
+              <option value="cliente">Cliente</option>
+            </select>
+          </div>
+          <p class="mensaje" id="mensajeRegistro"></p>
+          <button id="botonRegistro" type="submit">Registrarme</button>
+        </form>
+        <div class="iniciarSesion-link">
+          ¿Ya tienes cuenta? <a href="#" id="link-volver-login1">Inicia sesión</a>
+        </div>
+      </div>
+
+      <!-- Recuperar contraseña -->
+      <div id="vista-recuperar" class="recuperar-container vista" style="display: none;">
+        <h2 class="h2Contraseña">Recuperar contraseña</h2>
+        <form class="formContraseña">
+          <input id="documentoInputRecuperar" type="text" placeholder="Documento" required>
+          <div class="password-container">
+            <input class="nuevaContraseña" id="nuevaContraseña" type="text" placeholder="Nueva contraseña" required>
+            <i class='bx bx-show' id="mostrarContraseñaRecuperar"></i>
+          </div>
+          <p class="mensaje" id="mensajeRecuperar"></p>
+          <button class="buscarUsuario" id="buscarUsuario" type="button">Confirmar</button>
+          <button class="confirmar" id="confirmar" type="button">Confirmar</button>
+          <a href="#" class="iniciarSesion-link" id="link-volver-login2">Iniciar sesión</a>
+        </form>
+      </div>
+
     </section>
 
     <section class="segundaSeccion">
-      <div class="contGraficas">
-        <img class="imagenGrafica" src="../Images/imagenGrafica.webp" alt="imagenGrafica" />
-        <p class="parrafoGrafica">
-          Conoce en tiempo real el avance de tu proyecto, el progreso de tus compañeros y gestiona tus entregas desde cualquier dispositivo.
-        </p>
-      </div>
+    <div class="contGraficas">
+      <img class="imagenGrafica" src="../Images/imagenGrafica.webp" alt="imagenGrafica" />
+      <p class="parrafoGrafica">
+        Conoce en tiempo real el avance de tu proyecto, el progreso de tus compañeros y gestiona tus entregas desde
+        cualquier dispositivo.
+      </p>
+    </div>
     </section>
   </main>
 
@@ -89,7 +138,8 @@
     <p>© 2025 ProyectoHub - SENA</p>
   </footer>
 
-  <script src="../js/login.js"></script>
+  <script src="../js/inicio.js"></script>
+
 </body>
 
 </html>
