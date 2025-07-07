@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0fff4, #d0f8e4);
+  color: #1b1b1b;
+}
+
+nav {
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+  background-color: #b7fccb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.imagenLogo {
+  width: 160px;
+  height: auto;
+}
+
+.contBotones {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  width: 110px;
+  height: 40px;
+  border-radius: 9px;
+  background-color: #88eb1e;
+  color: rgb(255, 255, 255);
+  border: #7dd321;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #64b51d;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #68d30a;
+  margin-bottom: 15px;
+}
+
+header p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+main {
+  padding: 40px 80px;
+  margin: 0 0 40px 0;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  justify-items: center;
+  margin: 0 0 119px 0;
+}
+
+.contInformacionPrincipal {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+.contInformacionPrincipal p{
+  text-align: center;
+}
+
+.imagenLogoReporteloYa {
+  width: 120px;
+}
+
+.imagenLogoinfo{
+  width: 130px;
+  margin: 0 0 10px 0;
+}
+
+.imagenLogoEduTransit{
+  width: 130px;
+}
+
+.imagenLogotechspeakB{
+  width: 80px;
+  height: 90px;
+  margin: 0 0 19px 0;
+}
+
+.paginacion{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer{
+  display: flex;
+  background-color: #b2f5c5;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  height: 700px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s ease;
+  text-align: center;
+  overflow-y: auto;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content img {
+  width: 110px;
+  height: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.modal-content .info-extra {
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+  margin-top: 15px;
+}
+
+.modal-content .info-extra i {
+  color: #7dd321;
+  margin-right: 8px;
+}
+
+.close-modal {
+  background-color: #ff5e5e;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background-color: #d84343;
+}
+
+.info-extra{
+  display: flex;
+  flex-direction: column;
+}
+
+.descripcionLarga{
+  text-align: center;
+  margin-top: 15px
+}
+
+.botonesEmergentes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 9px;
+}
+
+.lista-palabras {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.lista-palabras li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+
